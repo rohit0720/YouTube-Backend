@@ -18,7 +18,7 @@ const userSchema = new Schema({
         lowercase: true,
         trim: true,
     },
-    fullname: {
+    fullName: {
         type: String,
         required: true,
         trim: true,
@@ -87,4 +87,4 @@ userSchema.methods.generateRefreshToken = async function() {
  }
 
 
-export const userData = mongoose.model("User",userSchema);
+export const User = mongoose.model("User",userSchema);
